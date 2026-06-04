@@ -1,148 +1,115 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Shereenflix ❤️</title>
-
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
-    margin:0;
-    background:black;
-    color:white;
-    font-family:Arial, sans-serif;
+background:#000;
+color:#fff;
+font-family:Arial,sans-serif;
 }
 
 .hero{
-    height:100vh;
-    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
-    url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    padding-left:60px;
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
+url("photo1.jpeg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding-left:60px;
 }
 
-.content h1{
-    font-size:80px;
-    color:#E50914;
-    margin:0;
+.hero-content h1{
+font-size:80px;
+color:#E50914;
+margin-bottom:10px;
 }
 
-.content h2{
-    font-size:50px;
-    margin:10px 0;
+.hero-content h2{
+font-size:50px;
+margin-bottom:15px;
 }
 
-button{
-    background:#E50914;
-    color:white;
-    border:none;
-    padding:15px 30px;
-    font-size:22px;
-    border-radius:5px;
+.hero-content p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.play-btn{
+background:#E50914;
+color:white;
+border:none;
+padding:15px 30px;
+font-size:22px;
+border-radius:6px;
+cursor:pointer;
 }
 
 .section{
-    padding:40px;
+padding:50px;
+}
+
+.section h2{
+margin-bottom:20px;
 }
 
 .cards{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-bottom:40px;
 }
 
 .card{
-    background:#222;
-    padding:20px;
-    width:220px;
-    border-radius:10px;
+background:#222;
+padding:20px;
+width:220px;
+border-radius:10px;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
 }
 
 .gallery{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:20px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
 }
 
 .gallery img{
-    width:300px;
-    border-radius:10px;
-    transition:0.3s;
+width:300px;
+border-radius:12px;
+transition:.3s;
 }
 
 .gallery img:hover{
-    transform:scale(1.05);
+transform:scale(1.05);
 }
 
+.finale{
+text-align:center;
+padding:100px 20px;
+}
+
+.finale h1{
+font-size:60px;
+color:#E50914;
+margin-bottom:20px;
+}
+
+.finale p{
+font-size:24px;
+line-height:1.8;
+}
+
+.finale h2{
+margin-top:30px;
+}
 </style>
-</head>
-
-<body>
-
-<div class="hero">
-    <div class="content">
-        <h1>SHEREENFLIX ❤️</h1>
-        <h2>Our Love Story</h2>
-        <p>A Netflix Original Series</p>
-        <button>▶️ Play</button>
-    </div>
-</div>
-
-<div class="section">
-    <h2>Season 1</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Episode 1</h3>
-            <p>The Beginning ❤️</p>
-        </div>
-
-        <div class="card">
-            <h3>Episode 2</h3>
-            <p>Getting Closer</p>
-        </div>
-
-        <div class="card">
-            <h3>Episode 3</h3>
-            <p>Adventures Together</p>
-        </div>
-
-        <div class="card">
-            <h3>Episode 4</h3>
-            <p>Through Everything</p>
-        </div>
-
-        <div class="card">
-            <h3>Episode 5</h3>
-            <p>One Year Later ❤️</p>
-        </div>
-
-    </div>
-</div>
-
-<div class="section">
-
-    <h2>Episode 1 - The Beginning ❤️</h2>
-
-    <p>
-    The chapter where our beautiful story began...
-    </p>
-
-    <div class="gallery">
-
-        <img src="photo1.jpeg">
-
-        <img src="photo2.jpeg">
-
-        <img src="photo3.jpeg">
-
-    </div>
-
-</div>
-
-</body>
-</html>
