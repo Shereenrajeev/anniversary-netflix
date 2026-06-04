@@ -1,42 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Our Love Story</title>
-    <style>
-        body{
-            background:black;
-            color:white;
-            text-align:center;
-            font-family:Arial;
-            margin-top:100px;
-        }
+<title>Shereenflix</title>
 
-        h1{
-            color:#E50914;
-            font-size:60px;
-        }
+<style>
+body{
+margin:0;
+background:black;
+color:white;
+font-family:Arial;
+}
 
-        button{
-            background:#E50914;
-            color:white;
-            border:none;
-            padding:15px 30px;
-            font-size:20px;
-            border-radius:5px;
-            cursor:pointer;
-        }
-    </style>
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
+url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding-left:60px;
+}
+
+.content h1{
+font-size:80px;
+color:#E50914;
+margin:0;
+}
+
+.content h2{
+font-size:50px;
+margin:10px 0;
+}
+
+button{
+background:#E50914;
+color:white;
+border:none;
+padding:15px 30px;
+font-size:22px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.section{
+padding:50px;
+}
+
+.cards{
+display:flex;
+gap:20px;
+}
+
+.card{
+background:#222;
+padding:20px;
+width:220px;
+border-radius:10px;
+}
+
+.card:hover{
+transform:scale(1.05);
+transition:.3s;
+}
+</style>
 </head>
 
 <body>
 
+<div class="hero">
+<div class="content">
 <h1>SHEREENFLIX ❤️</h1>
-
 <h2>Our Love Story</h2>
-
 <p>A Netflix Original Series</p>
-
 <button>▶️ Play</button>
+</div>
+</div>
+
+<div class="section">
+<h2>Season 1</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Episode 1</h3>
+<p>The Beginning</p>
+</div>
+
+<div class="card">
+<h3>Episode 2</h3>
+<p>Getting Closer</p>
+</div>
+
+<div class="card">
+<h3>Episode 3</h3>
+<p>Adventures Together</p>
+</div>
+
+<div class="card">
+<h3>Episode 4</h3>
+<p>Through Everything</p>
+</div>
+
+<div class="card">
+<h3>Episode 5</h3>
+<p>One Year Later ❤️</p>
+</div>
+
+</div>
+</div>
 
 </body>
 </html>
